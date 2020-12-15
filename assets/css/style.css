@@ -1,0 +1,128 @@
+*{
+	margin : 0;
+	padding: 0;
+	/*background-color: #E6E6E6;*/
+	/*background-color: red;*/
+	/*background-color: #F3F4F4;*/
+	font-family: 'Crete Round', serif;
+	font-size: 15px;
+}
+
+::selection {
+	color: red;
+	background: yellow;
+}
+
+/*Change Indecator Style*/
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: no-repeat 50% 100% 100%;
+}
+
+.navbar{
+	position: relative;
+	padding: 0.5rem 1rem 0 1rem;
+}
+
+.navbar-brand{
+	position: absolute;
+	left: 50%;
+	margin-left: -50px !important;
+	display: block;
+	margin-top: 2rem;
+}
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #F3F4F4;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-80%);
+  }
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: black;
+}
+
+.dropdown-menu{
+	margin-top: 0px;
+	padding-top: 0px;
+	border-style: none;
+	padding: 13px;
+	background-color: #F3F4F4;
+	/*background-color: red;*/
+	/*border-radius: 0 20px 0 20px;*/
+}
+
+.dropdown-item{
+	margin: 0 0 0 9px !important;
+	padding: 0;
+	color: black;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.navbar-nav > li > .dropdown-menu :hover{
+	background-color: inherit;
+}
+
+.dropdown-item:hover{
+	font-weight: bold;
+}
+
+.nav-link{
+	font-size: 17px;
+	margin-left: 17px;
+	/*padding-bottom: 0px;
+	margin-bottom: 0px;*/
+}
+
+.dropdown-item {
+    margin: 0 0 0 0 !important; 
+    padding: 0;
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.nav-item:hover .dropdown-menu{
+	display: block;
+	margin-top: 0;
+}
